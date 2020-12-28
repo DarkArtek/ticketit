@@ -1,6 +1,4 @@
-Demo support ticketing project based on Laravel 8.
-
-Project is partly generated with [QuickAdminPanel](https://2019.quickadminpanel.com)
+Demo support ticketing project based on Laravel 8 and PHP8.
 
 ---
 
@@ -37,8 +35,17 @@ Project is partly generated with [QuickAdminPanel](https://2019.quickadminpanel.
 - Run __php artisan migrate --seed__ (it has some seeded data for your testing)
 - That's it: launch the main URL 
 - If you want to login, click `Login` on top-right and use credentials __admin@admin.com__ - __password__ 
-- Agent's credentials are __agent1@agent1.com__ - __password__ 
 
+---
+
+## Docker
+- Alternativately you can pull this image from docker hub. It uses PHP8 - MariaDB - Nginx - Redis
+[TicketitApp - DockerHub](https://hub.docker.com/repository/docker/ahdcreative/ticketit=
+
+- Run **__docker-compose up -d__**
+- Inside the docker main app: Run __php artisan key:generate__
+- Again, inside the main docker app: Run __php artisan migrate --seed__ (it has some seeded data for your testing)
+- That's it: launch the main URL 
 ---
 
 ## License
@@ -46,11 +53,3 @@ Project is partly generated with [QuickAdminPanel](https://2019.quickadminpanel.
 Basically, feel free to use and re-use any way you want.
 
 ---
-
-## More from our LaravelDaily Team
-
-- Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
-- Read our [Blog with Laravel Tutorials](https://laraveldaily.com)
-- FREE E-book: [50 Laravel Quick Tips (and counting)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
-- Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
-- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
