@@ -39,9 +39,8 @@ Demo support ticketing project based on Laravel 8 and PHP8.
 ---
 
 ## Docker
-- Alternativately you can pull this image from docker hub. It uses PHP8 - MariaDB - Nginx - Redis
-[TicketitApp - DockerHub](https://hub.docker.com/repository/docker/ahdcreative/ticketit=)
-
+### Alternativately you can pull this image from docker hub. It uses PHP8FPM - MariaDB - Nginx - Redis
+- Pull the Image from DockerHub[TicketitApp - DockerHub](https://hub.docker.com/repository/docker/ahdcreative/ticketit=)
 - Run **__docker-compose up -d__**
 - Inside the docker main app: Run __php artisan key:generate__
 - Again, inside the main docker app: Run __php artisan migrate --seed__ (it has some seeded data for your testing)
